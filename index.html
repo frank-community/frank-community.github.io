@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dev Community</title>
+  <style>
+    /* ベーススタイル */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #EEE;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00FFFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #FFD700;
+    }
+
+    header, footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 10px;
+      border-bottom: 2px solid #333;
+    }
+
+    nav a {
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* ヒーローセクション */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 5vw;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #CCC;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #00FFFF;
+      color: #000;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #FFD700;
+      color: #111;
+    }
+
+    /* セクション共通 */
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    /* フッター */
+    footer p {
+      margin: 0;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <nav>
+    <a href="#">ホーム</a>
+    <a href="#">フォーラム</a>
+    <a href="#">イベント</a>
+    
+  </nav>
+
+  <div class="hero">
+    <h1>Frank - 開発者コミュニティ</h1>
+    <p>最新の技術トピック、ライブイベント、プロジェクトなどの情報をお届け</p>
+    <a href="#" class="btn">今すぐ参加</a>
+  </div>
+
+  <div class="container">
+    
+    <section>
+      
+      <h2>最新のフォーラム投稿</h2>
+      <!--
+      <div class="grid">
+        <div class="card">
+          <h3>TypeScript 型ガイド</h3>
+          <p>型定義のベストプラクティスを紹介します。</p>
+        </div>
+        <div class="card">
+          <h3>Rust vs Go パフォーマンス比較</h3>
+          <p>並列処理ベンチマークの結果と考察。</p>
+        </div>
+        <div class="card">
+          <h3>React 18 新機能まとめ</h3>
+          <p>Concurrent Mode と新しいフックの使い方。</p>
+        </div>
+      </div>
+      -->
+    </section>
+
+    <section>
+      <h2>今後のイベント</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Project-React</h3>
+          <p>8/25–8/27: ナビバーコンポーネントなどを追加</p>
+        </div>
+        <div class="card">
+          <h3>しりとり</h3>
+          <p>9/5~9/15: 皆でしりとりをする</p>
+        </div>
+        <div class="card">
+          <h3>新しいproject</h3>
+          <p>9/15~9/20: </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>リソース集</h2>
+      <!--
+      <ul>
+        <li><a href="#">公式ドキュメントカタログ</a></li>
+        <li><a href="#">チュートリアル一覧</a></li>
+        <li><a href="#">コードサンプル集</a></li>
+      </ul>
+    -->
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Frank Dev Community. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
 
