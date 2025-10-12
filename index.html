@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@600&display=swap" rel="stylesheet">
-<meta property="og:title" content="Frank-開発者コミュニティ" />
-<meta property="og:description" content="開発について語り合うdiscordサーバーです" />
-<meta property="og:image" content="https://pbs.twimg.com/media/GxyaJ74bsAgymPj?format=jpg&name=large" />
-<meta property="og:url" content="https://frank-community.github.io/" />
-<meta property="og:type" content="website" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@600&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Frank-開発者コミュニティ" />
+  <meta property="og:description" content="開発について語り合うdiscordサーバーです" />
+  <meta property="og:image" content="https://pbs.twimg.com/media/GxyaJ74bsAgymPj?format=jpg&name=large" />
+  <meta property="og:url" content="https://frank-community.github.io/" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta imgsrc="logo.svg" alt="Frank Dev Community Logo">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Frank Dev Community</title>
   <style>
-    
+    @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Noto+Sans+JP:wght@100..900&display=swap');
     body {
-      margin: 0;
-      padding: 0;
-      background: #000;
-      color: #EEE;
-      font-family: "Mozilla Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+      
+      
+      background: #000000;
+      color: #ffffff;
+      
       line-height: 1.6;
     }
 
@@ -34,67 +39,113 @@
     }
 
     a:hover {
-      color: #FFD700;
+      color: #00ffff;
     }
 
     header, footer {
       background: #111;
       text-align: center;
-      padding: 10px;
+      padding: 0px;
     }
 
     nav {
-      background: #000000;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+      
       display: flex;
       justify-content: center;
       gap: 1rem;
+      
       padding: 10px;
-      border-bottom: 2px solid #00000000;
+     
     }
-
+   
     nav a {
-      font-size: clamp(0.7rem, 1.8vw, 1.9rem);
+      font-size: clamp(0.7rem, 0.8vw, 1.2rem);
       margin: 0 15px;
       font-weight: bold;
     }
 
     .container {
-      max-width: 1000px;
+      background:white;
       margin: 0px;
-      padding: 10px 20px;
+      padding: 0px 0px;
     }
 
     /* ヒーローセクション */
     .hero {
-      background-size: cover;
-  background-position: center;
-      
-      text-align: center;
+     margin: 0px;
       padding: 0px 0px;
+     
+      background-image: url("k.jpg"); /* 画像のパス */
+      background-repeat: no-repeat;            /* 繰り返しをしない */
+      background-size: cover;                  /* 画面いっぱいに拡大縮小 */
+      background-position: center;             /* 中央に配置 */
+      z-index:10;
+      text-align: center;
+      padding:0%;
     }
 
-    .hero h1 {
-      
-      
-      margin-bottom: 0.1rem;
-    }
+    
     .frank {
       text-align: center;
       margin-bottom: 0px;
       font-family: "Mozilla Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-      margin-top: 0px;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      margin-top:-60px;
       font-size: clamp(5rem, 25vw, 16rem);
       color: #ffffff;
       font-weight: bold;
     }
-    .hero p {
+    .frank-footer {
       text-align: center;
+      margin-bottom: 0px;
+      font-family: "Mona Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      margin-top: 0px;
+      font-size: clamp(4rem, 18vw, 20rem);
+      color: #ffffff;
+      
+    }
+    .hero h2{
+      padding-left:2%;
+      text-align:left;
+      font-family: "Mona Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 0em;
+  
+  
+      margin:0px;
+
+      font-size: clamp(4rem,16vw, 24rem);
+      color: #ffffff;
+
+    }
+    
+    .hero h1{
+      padding-left:2%;
+      text-align:left;
+      margin: 0px;
+      font-family: "Noto Sans JP", sans-serif;
+      letter-spacing: 0.82em;
+      font-weight: 300;
+      font-style: normal;
+      margin-bottom:10px;
+
+      font-size: clamp(1rem,4vw, 8rem);
+      color: #ffffff;
+      
+    }
+    .hero p {
+      text-align: left;
+      padding-left:2%;
       margin-top: 0.0rem;
       font-style:bold;
-      font-size: clamp(0.4rem, 2vw, 1.5rem);
+      font-size: clamp(0.4rem, 1.2vw, 1.6rem);
       color: #ffffff;
     }
 
@@ -102,13 +153,13 @@
       display: inline-block;
       margin-top: 1rem;
       padding: 0.75rem 1.5rem;
-      background: #00ffff;
+      background: #00ffae;
       color: #000;
-      border-radius: 4px;
+      border-radius: 0px;
       font-weight: bold;
     }
     .btn:hover {
-      background: #00ffff;
+      background: #00ffae;
       color: #111;
     }
     .btn2 {
@@ -116,28 +167,37 @@
       margin-top: 1rem;
       padding: 0.75rem 1.5rem;
       background: transparent;
-      color: #00ffff;
-      border: #00ffff 1px solid;
-      border-radius: 4px;
+      color: #00ffae;
+      border: #00ffae 1px solid;
+      border-radius: 0px;
       font-weight: bold;
     }
 
     /* セクション共通 */
     section {
-      margin-bottom: 60px;
+      margin: 30px;
     }
     .lin{
       display: flex;
-      justify-content: center;
+      padding-bottom:6%;
+      padding-left:2%;
+      justify-content: left;
       gap: 1rem;
+      
     }
     section h2 {
-      border-bottom: 2px solid #333;
+      padding: 2%;
+      color:black;
+      font-family: "Noto Sans JP", sans-serif;
+      letter-spacing: 0.82em;
+      font-weight: 300;
+      font-style: normal;
+      border-bottom: 1px solid #000000;
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
-      font-size: 1.8rem;
+      font-size: clamp(1rem, 2vw, 3rem);
     }
-
+    
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -145,25 +205,108 @@
     }
 
     .card {
-      background: #111;
+      background: #000000;
       padding: 20px;
-      border: 1px solid #333;
-      border-radius: 4px;
+      border: 1px solid #000000;
+      border-radius: 0px;
     }
    .logo{
-    width: 1em;
-    height: 1em;
-    vertical-align: middle;
-   }
+      width: 1em;
+      height: 1em;
+      vertical-align: middle;
+    }
     .card h3 {
       margin-top: 0;
     }
 
-    /* フッター */
-    footer p {
+    
+    
+    footer {
+      font-family: "Urbanist", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      margin-top:0px;
+      
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      padding: 0rem 1rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+
+      max-width: 1100px;
+      
+    }
+
+    .footer-brand img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .footer-brand h3 {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    .footer-brand p {
+      margin: 0.2rem 0 1rem;
+      font-weight: bold;
+    }
+
+    
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
       margin: 0;
-      color: #00ffff;
-      font-size: 0.9rem;
+    }
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-links a {
+      color: var(--footer-text);
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: var(--accent-color);
+    }
+
+    .footer-social a {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--footer-text);
+      text-decoration: none;
+    }
+    .footer-social a:hover {
+      color: var(--accent-color);
+    }
+
+    .footer-bottom {
+      text-align: right;
+      font-size: 0.85rem;
+      margin-top: 1.5rem;
+      border-top: 1px solid #ddd;
+      padding-top: 0.5rem;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+.con header {
+  overflow: hidden;
+      display: flex;              /* 横並びにする */
+      align-items: center;        /* 縦方向を中央揃え */
+      background: #000000;
+      padding: 0px;
+      font-weight: bold;
+    }
+    .con header img {
+      width: 100%;                /* アイコンやロゴサイズ */
+      height: 100%;
+      object-fit: cover;          /* 枠にフィットさせる（切り抜き） */
+      display: block;
     }
   </style>
 </head>
@@ -171,22 +314,22 @@
 
   
 
-  <nav>
-    <img src="logo.svg" alt="Frank Dev Community Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+  
+
+  <div class="hero">
+    <nav>
+   
     <a href="#">ホーム</a>
     <a href="#">イベント</a>
     <a href="https://frankservice.instatus.com">サービス</a>
     
   </nav>
-
-  <div class="hero">
+    <h2>FRANK</h2>
+    <h1>創作は、<ruby>率直<rt>フランク</rt></ruby>であれ。</h1>
     
-    <h1 class="frank">Frank<img src="logo.svg" class="logo"/></h1>
-    
-    
-    <p>最新のトピック、イベント、プロジェクトなどの情報をお届け</p>
+   <p>我々frankはあなたの創作をサポートします。</p>
     <div class="lin">
-    <a href="https://x.com/home" class="btn2">最新情報</a>
+    <a href="https://x.com/home" class="btn2">詳しく</a>
     <a href="https://discord.gg/KfZkcCGeUh" class="btn">今すぐ参加</a>
     </div>
   </div>
@@ -195,38 +338,51 @@
     
     <section>
       
-      <h2>最新のフォーラム投稿</h2>
-      <!--
+      <h2>最近の出来事</h2>
+      
       <div class="grid">
+                <div class="con">
+          <header>
+        <img src="k.jpg"/>
+        </header>
         <div class="card">
-          <h3>TypeScript 型ガイド</h3>
-          <p>型定義のベストプラクティスを紹介します。</p>
+          <h3>サイトを新しくしました</h3>
+          <p>どうですか？</p>
+          <a href="" class="btn2">詳細を見る→</a>
+         
         </div>
-        <div class="card">
-          <h3>Rust vs Go パフォーマンス比較</h3>
-          <p>並列処理ベンチマークの結果と考察。</p>
+        
         </div>
+        <div class="con">
+           <header>
+        <img src="https://keitagame.github.io/frank-community.github.io/k.png"/>
+        </header>
         <div class="card">
-          <h3>React 18 新機能まとめ</h3>
-          <p>Concurrent Mode と新しいフックの使い方。</p>
+          <h3>しりとり</h3>
+          <p>IT用語しりとり</p>
+          <a href="" class="btn2">詳細を見る→</a>
+        </div>
         </div>
       </div>
-      -->
+      
     </section>
     <section>
       <h2>開催中のイベント</h2>
+     
       <div class="grid">
+        <div class="con">
+          <header>
+        <img src="https://code.visualstudio.com/assets/docs/nodejs/reactjs/breakpoint.png"/>
+        </header>
         <div class="card">
           <h3>Frank-React</h3>
           <p>Frankのためのreact</p>
-          <a href="" class="btn">詳細を見る→</a>
+          <a href="" class="btn2">詳細を見る→</a>
          
         </div>
-        <div class="card">
-          <h3>TlAしりとり</h3>
-          <p>IT用語しりとり</p>
-          <a href="" class="btn">詳細を見る→</a>
+        
         </div>
+        
         
       </div>
     </section>
@@ -247,22 +403,43 @@
         </div>
       </div>
     </section>
-
     <section>
-      <h2>リソース集</h2>
-      <!--
-      <ul>
-        <li><a href="#">公式ドキュメントカタログ</a></li>
-        <li><a href="#">チュートリアル一覧</a></li>
-        <li><a href="#">コードサンプル集</a></li>
-      </ul>
-    -->
-    </section>
+<h2></h2>
+</section>
+    
   </div>
-
   <footer>
-    <p>&copy; 2025 Frank Dev Community. All rights reserved.</p>
-  </footer>
+    <h1 class="frank-footer">Frank<img src="logo.svg" class="logo"/></h1>
+    <div class="footer-container">
+       
+      <!-- ブランド -->
+      
 
+      <!-- ナビゲーション -->
+      <div class="footer-links">
+        <h4>link</h4>
+        <ul>
+          <li><a href="https://github.com/frank-community">GitHub</a></li>
+          <li><a href="https://discord.gg/KfZkcCGeUh">Discord</a></li>
+        
+        </ul>
+      </div>
+
+      <!-- その他 -->
+      <div class="footer-links">
+      
+
+      <!-- SNS -->
+      <div class="footer-social">
+        <h4>connect</h4>
+        <a href="https://x.com/tech_keitagames">X @tech_keitagames</a>
+       
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Frank Dev Community. All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
