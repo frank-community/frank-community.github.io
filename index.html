@@ -27,8 +27,8 @@
     body {
       
       
-      background: #000;
-      color: #EEE;
+      background: #000000;
+      color: #ffffff;
       
       line-height: 1.6;
     }
@@ -39,22 +39,23 @@
     }
 
     a:hover {
-      color: #FFD700;
+      color: #00ffff;
     }
 
     header, footer {
       background: #111;
       text-align: center;
-      padding: 10px;
+      padding: 0px;
     }
 
     nav {
-      background: #000000;
+      background: #00000000;
       display: flex;
       justify-content: center;
       gap: 1rem;
+      
       padding: 10px;
-      border-bottom: 2px solid #00000000;
+     
     }
    
     nav a {
@@ -64,20 +65,23 @@
     }
 
     .container {
-      
+      background:white;
       margin: 0px;
-      padding: 10px 20px;
+      padding: 0px 0px;
     }
 
     /* ヒーローセクション */
     .hero {
+     margin: 0px;
+      padding: 0px 0px;
+     
       background-image: url("k.jpg"); /* 画像のパス */
       background-repeat: no-repeat;            /* 繰り返しをしない */
       background-size: cover;                  /* 画面いっぱいに拡大縮小 */
       background-position: center;             /* 中央に配置 */
       z-index:10;
       text-align: center;
-      
+      padding:0%;
     }
 
     
@@ -96,13 +100,13 @@
     .frank-footer {
       text-align: center;
       margin-bottom: 0px;
-      font-family: "Mozilla Text", sans-serif;
+      font-family: "Mona Sans", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 100;
+      font-weight: 500;
       margin-top: 0px;
       font-size: clamp(4rem, 18vw, 20rem);
       color: #ffffff;
-      font-weight: bold;
+      
     }
     .hero h2{
       padding-left:2%;
@@ -170,23 +174,29 @@
 
     /* セクション共通 */
     section {
-      margin-bottom: 60px;
+      margin: 30px;
     }
     .lin{
       display: flex;
-
+      padding-bottom:6%;
       padding-left:2%;
       justify-content: left;
       gap: 1rem;
       
     }
     section h2 {
-      border-bottom: 2px solid #333;
+      padding: 2%;
+      color:black;
+      font-family: "Noto Sans JP", sans-serif;
+      letter-spacing: 0.82em;
+      font-weight: 300;
+      font-style: normal;
+      border-bottom: 1px solid #000000;
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
-      font-size: 1.8rem;
+      font-size: clamp(1rem, 2vw, 3rem);
     }
-
+    
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -194,9 +204,9 @@
     }
 
     .card {
-      background: #111;
+      background: #000000;
       padding: 20px;
-      border: 1px solid #333;
+      border: 1px solid #ffffff;
       border-radius: 4px;
     }
    .logo{
@@ -215,7 +225,7 @@
       font-optical-sizing: auto;
       font-weight: 600;
       margin-top:0px;
-      border-top:1px solid #ddd;
+      
       background: var(--footer-bg);
       color: var(--footer-text);
       padding: 0rem 1rem 1rem;
@@ -289,16 +299,16 @@
 
   
 
-  <nav>
+  
+
+  <div class="hero">
+    <nav>
    
     <a href="#">ホーム</a>
     <a href="#">イベント</a>
     <a href="https://frankservice.instatus.com">サービス</a>
     
   </nav>
-
-  <div class="hero">
-    
     <h2>FRANK</h2>
     <h1>創作は、<ruby>率直<rt>フランク</rt></ruby>であれ。</h1>
     
@@ -313,7 +323,7 @@
     
     <section>
       
-      <h2>最新のフォーラム投稿</h2>
+      <h2>最近の出来事</h2>
       <!--
       <div class="grid">
         <div class="card">
@@ -333,17 +343,18 @@
     </section>
     <section>
       <h2>開催中のイベント</h2>
+     
       <div class="grid">
         <div class="card">
           <h3>Frank-React</h3>
           <p>Frankのためのreact</p>
-          <a href="" class="btn">詳細を見る→</a>
+          <a href="" class="btn2">詳細を見る→</a>
          
         </div>
         <div class="card">
           <h3>TlAしりとり</h3>
           <p>IT用語しりとり</p>
-          <a href="" class="btn">詳細を見る→</a>
+          <a href="" class="btn2">詳細を見る→</a>
         </div>
         
       </div>
@@ -365,17 +376,10 @@
         </div>
       </div>
     </section>
-
     <section>
-      <h2>リソース集</h2>
-      <!--
-      <ul>
-        <li><a href="#">公式ドキュメントカタログ</a></li>
-        <li><a href="#">チュートリアル一覧</a></li>
-        <li><a href="#">コードサンプル集</a></li>
-      </ul>
-    -->
-    </section>
+<h2></h2>
+</section>
+    
   </div>
   <footer>
     <h1 class="frank-footer">Frank<img src="logo.svg" class="logo"/></h1>
