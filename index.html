@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
@@ -13,22 +15,21 @@
   <meta property="og:image" content="https://pbs.twimg.com/media/GxyaJ74bsAgymPj?format=jpg&name=large" />
   <meta property="og:url" content="https://frank-community.github.io/" />
   <meta property="og:type" content="website" />
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta imgsrc="logo.svg" alt="Frank Dev Community Logo">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Frank Dev Community</title>
   <style>
-    
+    @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Noto+Sans+JP:wght@100..900&display=swap');
     body {
       
-      padding: 0;
+      
       background: #000;
       color: #EEE;
-      font-family: "Mozilla Text", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
+      
       line-height: 1.6;
     }
 
@@ -55,24 +56,28 @@
       padding: 10px;
       border-bottom: 2px solid #00000000;
     }
-
+   
     nav a {
-      font-size: clamp(0.7rem, 1.8vw, 1.9rem);
+      font-size: clamp(0.7rem, 0.8vw, 1.2rem);
       margin: 0 15px;
       font-weight: bold;
     }
 
     .container {
-      max-width: 1000px;
+      
       margin: 0px;
       padding: 10px 20px;
     }
 
     /* ヒーローセクション */
     .hero {
-      
+      background-image: url("k.png"); /* 画像のパス */
+  background-repeat: no-repeat;            /* 繰り返しをしない */
+  background-size: cover;                  /* 画面いっぱいに拡大縮小 */
+  background-position: center;             /* 中央に配置 */
+    z-index:10;
       text-align: center;
-      padding: 0px 0px;
+      
     }
 
     
@@ -95,22 +100,40 @@
       font-optical-sizing: auto;
       font-weight: 100;
       margin-top: 0px;
-      font-size: clamp(5rem, 25vw, 16rem);
+      font-size: clamp(4rem, 18vw, 20rem);
       color: #ffffff;
       font-weight: bold;
     }
-    .hero h1{
-      padding-left:10%;
+    .hero h2{
+      padding-left:2%;
       text-align:left;
-      margin-bottom: 0px;
-      font-family: "Mozilla Text", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-      margin-top:0px;
-      font-size: clamp(2rem,14vw, 17rem);
+    font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+      letter-spacing: 0em;
+  
+  
+      margin:0px;
+
+      font-size: clamp(4rem,16vw, 24rem);
       color: #ffffff;
-      font-weight: bold;
+
+    }
+    
+    .hero h1{
+      padding-left:2%;
+      text-align:left;
+      margin: 0px;
+      font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.82em;
+  font-weight: 300;
+  font-style: normal;
+      margin-bottom:40px;
+
+      font-size: clamp(1rem,4vw, 8rem);
+      color: #ffffff;
+      
     }
     .hero p {
       text-align: center;
@@ -263,7 +286,7 @@
   
 
   <nav>
-    <img src="logo.svg" alt="Frank Dev Community Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+   
     <a href="#">ホーム</a>
     <a href="#">イベント</a>
     <a href="https://frankservice.instatus.com">サービス</a>
@@ -272,10 +295,10 @@
 
   <div class="hero">
     
-    <h1>We create</h1>
-    <h1>for all!!</h1>
+    <h2>FRANK</h2>
+    <h1>創作は、<ruby>率直<rt>フランク</rt></ruby>になる。</h1>
     
-    <p>最新のトピック、イベント、プロジェクトなどの情報をお届け</p>
+   
     <div class="lin">
     <a href="https://x.com/home" class="btn2">最新情報</a>
     <a href="https://discord.gg/KfZkcCGeUh" class="btn">今すぐ参加</a>
@@ -350,7 +373,7 @@
     -->
     </section>
   </div>
-<footer>
+  <footer>
     <h1 class="frank-footer">Frank<img src="logo.svg" class="logo"/></h1>
     <div class="footer-container">
        
@@ -383,7 +406,5 @@
       &copy; 2025 Frank Dev Community. All rights reserved.
     </div>
   </footer>
-  
-
 </body>
 </html>
