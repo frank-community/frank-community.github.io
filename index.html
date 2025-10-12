@@ -49,7 +49,8 @@
     }
 
     nav {
-      background: #00000000;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+      
       display: flex;
       justify-content: center;
       gap: 1rem;
@@ -206,8 +207,8 @@
     .card {
       background: #000000;
       padding: 20px;
-      border: 1px solid #ffffff;
-      border-radius: 4px;
+      border: 1px solid #000000;
+      border-radius: 0px;
     }
    .logo{
       width: 1em;
@@ -256,7 +257,7 @@
       font-weight: bold;
     }
 
-   
+    
     .footer-links ul {
       list-style: none;
       padding: 0;
@@ -292,6 +293,20 @@
       max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
+    }
+.con header {
+  overflow: hidden;
+      display: flex;              /* 横並びにする */
+      align-items: center;        /* 縦方向を中央揃え */
+      background: #000000;
+      padding: 0px;
+      font-weight: bold;
+    }
+    .con header img {
+      width: 100%;                /* アイコンやロゴサイズ */
+      height: 100%;
+      object-fit: cover;          /* 枠にフィットさせる（切り抜き） */
+      display: block;
     }
   </style>
 </head>
@@ -345,18 +360,28 @@
       <h2>開催中のイベント</h2>
      
       <div class="grid">
+        <div class="con">
+          <header>
+        <img src="k.jpg"/>
+        </header>
         <div class="card">
           <h3>Frank-React</h3>
           <p>Frankのためのreact</p>
           <a href="" class="btn2">詳細を見る→</a>
          
         </div>
+        
+        </div>
+        <div class="con">
+           <header>
+        <img src="m.jpg"/>
+        </header>
         <div class="card">
           <h3>TlAしりとり</h3>
           <p>IT用語しりとり</p>
           <a href="" class="btn2">詳細を見る→</a>
         </div>
-        
+        </div>
       </div>
     </section>
     <section>
